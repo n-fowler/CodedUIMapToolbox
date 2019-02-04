@@ -6,9 +6,10 @@ UIMap Toolbox allows you to restructure, split and merge UIMaps created for Micr
 
 *UIMap Toolbox*
 
+_Visual Studio 2017 support has been added July 27th, 2017._
 _Visual Studio 2015 support has been added January 11th, 2016._
 
-UIMap Toolbox allows you to restructure, split and merge UIMaps created for Microsoft CodedUI tests in Visual Studio 2010, 2012, 2013 and 2015. Developed in C#/.NET 4.0
+UIMap Toolbox allows you to restructure, split and merge UIMaps created for Microsoft CodedUI tests in Visual Studio 2010, 2012, 2013, 2015 and 2017. Developed in C#/.NET 4.0
 
 User Guide including some thoughts on developing maintainable CodedUI tests can be found on the Documentation page.
 
