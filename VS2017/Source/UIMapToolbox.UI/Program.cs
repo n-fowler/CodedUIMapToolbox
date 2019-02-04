@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace UIMapToolbox.UI
@@ -15,7 +13,7 @@ namespace UIMapToolbox.UI
         [STAThread]
         static void Main()
         {
-            Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
+            Application.ThreadException += Application_ThreadException;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
@@ -23,8 +21,9 @@ namespace UIMapToolbox.UI
 
         static void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
         {
-            string msg = String.Format("An error occured. Please report to http://uimaptoolbox.codeplex.com with information on how to reproduce issue.\n\n{0}\n\nStack trace:\n{1}", e.Exception.Message, e.Exception.StackTrace);
-            
+            string msg =
+                $"An error occured. Please report to https://github.com/n-fowler/CodedUIMapToolbox with information on how to reproduce issue.\n\n{e.Exception.Message}\n\nStack trace:\n{e.Exception.StackTrace}";
+
             MessageBox.Show(msg, ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
